@@ -1,3 +1,7 @@
+tmp/
+local/
+test/
+
 # Logs
 logs
 *.log
