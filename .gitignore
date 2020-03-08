@@ -1,6 +1,7 @@
 tmp/
 local/
 test/
+docs/
 
 # Logs
 logs
