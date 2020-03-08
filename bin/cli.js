@@ -11,29 +11,24 @@ const cli = meow(`
 
     Options
       --type, -t  The type of scan. Valid types are "pdf"
-      --url,  -r  The url to the resource to scan.
-      --file, -f  The input file of the resource to scan.
+      --path, -p  The path to the resource to be scanned. This can be
+                  either a url, or a file on the disk.
       --fix,  -F  Attempt to fix the resource. This will not overwrite the resource,
                   but instead create a fixed copy of the resource.
 
     Examples
-        $ a11ycat scan --type pdf --file /path/to/some/file 
-        $ a11ycat scan --type website --url https://google.com
-        $ a11ycat scan --type pdf --url https://my-cool-site.com/my-cool-file.pdf
+        $ a11ycat scan --type pdf --path /path/to/some/file 
+        $ a11ycat scan --type pdf --path https://google.com/google.pdf
 
 `, {
     flags: {
         type: {
             type: 'string',
-            alias: 't' 
+            alias: 't'
         },
-        url: {
+        path: {
             type: 'string',
-            alias: 'u'
-        },
-        file: {
-            type: 'string',
-            alias: 'f'
+            alias: 'p'
         },
         fix: {
             type: 'boolean',
