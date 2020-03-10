@@ -1,8 +1,22 @@
-# a11y-cat
+# a11ycat
 
-A11y cat is a NodeJS-based tools that may be used to identify and remedy unaccessible files
+A11ycat is a NodeJS-based tools that may be used to identify and remedy unaccessible files
 
-### How to use
+## Installation
+
+**HOLD UP!**
+
+***This build is not production ready. The instructions provided are for testing purposes only.***
+
+```
+git clone https://github.com/devnoot/a11ycat.git a11ycat
+cd a11ycat
+npm install
+npm link
+```
+
+
+## How to use
 
 ```
    Usage
